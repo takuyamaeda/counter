@@ -1,0 +1,14 @@
+// 既定の設定とユーザー設定を上書きするには、このファイル内に設定を挿入します
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": true,
+  "editor.renderIndentGuides": true,
+  "files.exclude": {
+    "app/**/.js": true,
+    "app/**/.map": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true
+  }
+}
