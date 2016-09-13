@@ -4,8 +4,6 @@
   "editor.renderWhitespace": true,
   "editor.renderIndentGuides": true,
   "files.exclude": {
-    "app/**/.js": true,
-    "app/**/.map": true,
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,

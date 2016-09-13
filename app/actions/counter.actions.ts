@@ -6,7 +6,7 @@ import { AppState } from '../reducers';
 export class CounterActions {
   static INCREMENT_COUNTER: string = 'INCREMENT_COUNTER';
   static DECREMENT_COUNTER: string = 'DECREMENT_COUNTER';
-  static RESET_COUNTER: string = 'RESET_COUNTER'
+  static RESET_COUNTER: string = 'RESET_COUNTER';
 
   constructor(
     private store: NgRedux<AppState>

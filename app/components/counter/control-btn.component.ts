@@ -17,6 +17,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
       transform: translateX(-50%) translateY(-50%);
       top: 50%;
       left: 50%;
+      z-index: 1000;
     }
   `]
 })

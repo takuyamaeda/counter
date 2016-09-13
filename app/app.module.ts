@@ -5,26 +5,22 @@ import { NgRedux } from 'ng2-redux';
 import { CounterActions } from './actions/counter.actions';
 import { WeekRecordActions } from './actions/week-record.actions';
 import { AppState, rootReducer, enhancers } from './reducers/index';
+import { routing, appRoutingProviders } from './routes';
 
-import { AppComponent }  from './app.component';
-import { ControllerComponent }  from './controller.component';
-import { ControlBtnComponent }  from './control-btn.component';
-import { DisplayComponent } from './display.component';
+import * as Components  from './components';
 
 @NgModule({
-  imports: [ BrowserModule ],
+  imports: [ BrowserModule, routing ],
   declarations: [
-    AppComponent,
-    ControllerComponent,
-    ControlBtnComponent,
-    DisplayComponent
+    ...(Object.keys(Components).map(key => Components[key]))
   ],
   providers: [
     NgRedux,
     CounterActions,
-    WeekRecordActions
+    WeekRecordActions,
+    appRoutingProviders
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ Components.AppComponent ]
 })
 export class AppModule {
   constructor(

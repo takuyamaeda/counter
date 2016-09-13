@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'counter',
   template: '<display></display><controller></controller>'
 })
-export class AppComponent { }
+export class CounterComponent { }

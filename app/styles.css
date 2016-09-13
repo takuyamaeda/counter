@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif-thin sans-serif;
+  font-family: sans-serif-thin, sans-serif, "Yu Gothic UI Light","Yu Gothic UI", "YuGothic";
+  font-weight: 100;
   -webkit-user-select: none;
 }
 

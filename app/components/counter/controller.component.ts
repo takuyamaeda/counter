@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 
-import { CounterActions } from './actions/counter.actions';
-import { WeekRecordActions } from './actions/week-record.actions';
-import { AppState } from './reducers/index';
+import { CounterActions } from '../../actions/counter.actions';
+import { WeekRecordActions } from '../../actions/week-record.actions';
+import { AppState } from '../../reducers';
 
 @Component({
   selector: 'controller',
@@ -15,6 +15,8 @@ import { AppState } from './reducers/index';
   styles: [`
     .reset {
       font-size: 0.5em;
+      position: relative;
+      z-index: 1000;
     }
   `],
   host: {
