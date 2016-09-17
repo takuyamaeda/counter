@@ -14,5 +14,5 @@ export const rootReducer = combineReducers<AppState>({
 });
 
 export const enhancers = [
-  persistState('counter', { key: 'my-counter-app' })
+  persistState(['counter', 'weekRecord'], { key: 'my-counter-app' })
 ];
